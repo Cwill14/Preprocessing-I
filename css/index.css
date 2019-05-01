@@ -135,18 +135,50 @@ body {
   height: 100%;
 }
 /* My Code */
+html {
+  font-size: 62.5%;
+}
 body {
   margin: auto;
-  max-width: 900px;
+  max-width: 85%;
   border: 1px dashed red;
 }
 body header {
+  border: 1px dashed red;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 body header nav {
+  border: 1px dashed red;
+  width: 66%;
+  max-width: 66%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+body header nav a {
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: #4682B4;
+}
+body header img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  margin: 12.5px;
+}
+body header h1 {
+  font-size: 6rem;
+}
+body header p {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+body main section {
+  display: flex;
 }
 body footer {
   text-align: center;

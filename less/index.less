@@ -59,25 +59,55 @@ html, body {
 
 /* My Code */
 
-
+html {
+	font-size: 62.5%;
+}
 
 @primary-color: #4682B4;
 body {
 	margin: auto;
-	max-width: 900px;
+	max-width: 85%;
 	border: 1px dashed red;
 	header {
+		border: 1px dashed red;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		text-align: center;
 		nav {
+			border: 1px dashed red;
+			width: 66%;
+			max-width: 66%;
 			display: flex;
 			flex-direction: row;
+			justify-content: space-around;
+			margin: 15px 0;
+			a {
+				font-size: 2.25rem;
+				text-decoration: none;
+				color: @primary-color;
+			}
+		}
+		img {
+			max-width: 300px;
+			max-height: 300px;
+			border-radius: 50%;
+			margin: 12.5px;
+		}
+		h1 {
+			font-size: 6rem;
+			
+		}
+		p {
+			font-size: 2.5rem;
+			margin-top: 10px;
 		}
 	}
-	
-	
-	main {
 
+	main {
+		section {
+			display: flex;
+		}
 	}
 	footer {
 		text-align: center;
