@@ -69,13 +69,16 @@ body {
 	max-width: 85%;
 	border: 1px dashed red;
 	header {
-		border: 1px dashed red;
+		// border: 1px dashed red;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		animation-name: fadein;
+		animation-duration: 2s;
+		animation-timing-function: ease-in;
 		nav {
-			border: 1px dashed red;
+			// border: 1px dashed red;
 			width: 66%;
 			max-width: 66%;
 			display: flex;
@@ -87,12 +90,17 @@ body {
 				text-decoration: none;
 				color: @primary-color;
 			}
+			a:hover {
+				color: #aaf;
+				transform: scale(1.25);
+			}
 		}
 		img {
 			max-width: 300px;
 			max-height: 300px;
 			border-radius: 50%;
 			margin: 12.5px;
+			
 		}
 		h1 {
 			font-size: 6rem;
@@ -103,13 +111,54 @@ body {
 			margin-top: 10px;
 		}
 	}
-
+	@keyframes fadein {
+		0% {
+			opacity: 0.1;
+		}
+		// 50% {
+		// 	opacity: 0.5;
+		// }
+		100% {
+			opacity: 1;
+		}
+	}
 	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 7.5rem;
+		p {
+			font-size: 1.6rem;
+		}
 		section {
 			display: flex;
+			flex-direction: column;
+			width: 45%;
+			text-align: center;
+			h2 {
+				font-size: 3rem;
+				color: @primary-color;
+			}
+			.info-section {
+				margin: 10px;
+			}
+			
+			.subtitle {
+				font-size: 2rem;
+			}
+
 		}
+		#left {
+			background-color: #ddd;
+		}
+		// #right {
+		// 	background-color: 
+		// }
 	}
 	footer {
 		text-align: center;
+		p {
+			margin-top: 15px;
+		}
 	}
 }
