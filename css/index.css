@@ -135,12 +135,10 @@ body {
   height: 100%;
 }
 /* My Code */
-.flex-box {
-  display: flex;
-  flex-direction: column;
-}
 body {
+  margin: auto;
   max-width: 900px;
+  border: 1px dashed red;
 }
 body header {
   display: flex;
@@ -150,44 +148,6 @@ body header nav {
   display: flex;
   flex-direction: row;
 }
-body header #top {
-  display: flex;
-  flex-direction: column;
-}
-body header #top #name-job {
-  display: flex;
-  flex-direction: column;
-}
-body header #top #name-job h1 {
-  font-size: 25rem;
-}
-body main {
-  display: flex;
-  flex-direction: column;
-}
-body main section {
-  display: flex;
-  flex-direction: column;
-}
-body main section #left {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-}
-body main section #left img {
-  max-width: 150px;
-  max-height: 150px;
-  border: 2px solid #4682B4;
-}
-body main section #right {
-  display: flex;
-  flex-direction: column;
-}
-body main .info-section {
-  display: flex;
-  flex-direction: column;
-}
-body main .info-section .mini-info {
-  display: flex;
-  flex-direction: column;
+body footer {
+  text-align: center;
 }

@@ -60,59 +60,26 @@ html, body {
 /* My Code */
 
 
-.flex-box {
-	display: flex;
-	flex-direction: column;
-}
 
 @primary-color: #4682B4;
 body {
+	margin: auto;
 	max-width: 900px;
+	border: 1px dashed red;
 	header {
-		// .flex-box();
 		display: flex;
 		flex-direction: column;
 		nav {
 			display: flex;
 			flex-direction: row;
-
-		}
-		#top {
-			display: flex;
-			flex-direction: column;
-			#name-job {
-				.flex-box();
-				
-				h1 {
-					font-size: 25rem;
-				}
-			}
 		}
 	}
+	
+	
 	main {
-		.flex-box();
-		section {
-			.flex-box();
-			#left {
-				.flex-box();
-				img {
-					max-width: 150px;
-					max-height: 150px;
-					border: 2px solid @primary-color;
-				}
-				
-				border: 1px solid black;
-			}
-			#right {
-				.flex-box();
-			}
-		}
-		.info-section {
-			.flex-box();
-			.mini-info {
-				.flex-box();
-			}
-		}
-		
+
+	}
+	footer {
+		text-align: center;
 	}
 }
