@@ -59,24 +59,33 @@ html, body {
 
 /* My Code */
 
-html {
-	font-size: 62.5%;
-}
 
 .flex-box {
 	display: flex;
+	flex-direction: column;
 }
+
+@primary-color: #4682B4;
 body {
+	max-width: 900px;
 	header {
-		.flex-box();
+		// .flex-box();
+		display: flex;
+		flex-direction: column;
 		nav {
-			.flex-box();
+			display: flex;
+			flex-direction: row;
 
 		}
 		#top {
-			.flex-box();
+			display: flex;
+			flex-direction: column;
 			#name-job {
 				.flex-box();
+				
+				h1 {
+					font-size: 25rem;
+				}
 			}
 		}
 	}
@@ -86,6 +95,13 @@ body {
 			.flex-box();
 			#left {
 				.flex-box();
+				img {
+					max-width: 150px;
+					max-height: 150px;
+					border: 2px solid @primary-color;
+				}
+				
+				border: 1px solid black;
 			}
 			#right {
 				.flex-box();
@@ -94,7 +110,7 @@ body {
 		.info-section {
 			.flex-box();
 			.mini-info {
-				.flexbox();
+				.flex-box();
 			}
 		}
 		
