@@ -13,7 +13,101 @@
   <![endif]-->
 </head>
 
+<!-- initial commit-->
+
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div>
+      <img src="images/picture-of-me.jpg" alt="Picture of Clark Williams">
+      <h1><strong>Clark Williams</strong></h1>
+      <p>Full-stack Web Developer</p>
+    </div>
+  </header>
+  
+  <main>
+    <section id="left">
+      <div class="info-section">
+        <h2>Profile</h2>
+        <p>I am currently training in Lambda school to become a full stack developer. 
+          I love sports, mainly football and especially basketball. I not only play, but I am youth coach sometimes as well. 
+          I also love history, especially military history,
+        with special interest in ancient, viking, medieval times, plus the civil war and world wars. 
+        I love reading about mythology, especially norse myths. I am a proud firearm owner, and love learning about them
+      and other historical weapons. I am a massive Lord of the Rings fan, have all the books and have read them multiple times.
+      I am also a gamer, and enjoy many genres of computer games, but like strategy the most. 
+    </p>
+      </div>
+      <div class="info-section">
+        <h2>Contact Me</h2><br>
+        <p class="subtitle">Phone: <br> </p><p>303-517-6210</p>
+        <p class="subtitle">Website: <br> </p><p>theclarkwilliams.com</p>
+        <p class="subtitle">Email: <br> </p><p>theclarkwilliams@gmail.com </p>
+      </div>
+      <div class="info-section">
+        <h2>or e-mail me below</h2><br><br>
+        <form action="send-email">
+          <fieldset id="email-form">
+            <label><b>First and Last Name:</b><br><input type="text" placeholder="full name" required></label><br><br>
+            <label><b>Email:</b><br><input type="text" placeholder="email" required></label><br><br>
+            <label><b>Subject:</b><br><input type="text" placeholder="subject" required></label><br><br>
+            <label><b>Message:</b><br><input type="text" placeholder="type message here" required></label><br><br>
+            <button type="submit">Send</button><br><br>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section id="right">
+      <div class="info-section">
+        <h2>Education</h2>
+        <p class="subtitle">Legend High School</p>
+        <p>2009-2011</p>
+        <p class="subtitle">Rocky Mountain High School</p>
+        <p> 2011-2013</p>
+        <p>Graduated</p>
+        <p class="subtitle">Utah State University</p>
+        <p>2013-2014</p>
+        <p>Almost 3 semesters</p>
+        <p class="subtitle">BYU Independent Study</p>
+        <p>2018</p>
+        <p>US History since 1877, 90 % </p>
+        <p class="subtitle">Lambda School</p>
+        <p>2019-2020</p>
+        <p>9 months, full-stack web development</p>
+      </div>
+      <div class="info-section">
+          <h2>Work Experience</h2>
+          <p class="subtitle">Landscaping and Construction(framing)</p>
+          <p> text text text</p>
+          <p>Worked as a summer job</p>
+          <h2>Work Experience</h2>
+          <p class="subtitle">FootballSkillsCamp.com -- Youth football coach and trainer</p>
+          <p> Also volunteered beforehand</p>
+          <h2>Work Experience</h2>
+          <p class="subtitle">Mass Mutual --Executive Assistant</p>
+          <p> Daily driver, errand runner, and other assistant tasks</p>
+        </div>
+      <div class="info-section">
+        <h2>Skills</h2>
+        <ul>
+          <li><p>HTML & CSS</p></li>
+          <li><p>JavaScript</p></li>
+          <li><p>Git and Github</p></li>
+          <!-- <li><p></p></li> -->
+        </ul>
+      </div>
+    </section>     
+  </main>
+
+  <footer>
+    <a href="#">Back to top</a>
+    <p>&copy Clark Williams 2019</p>
+  </footer>
+  
 </body>
 </html>

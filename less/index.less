@@ -57,3 +57,158 @@ html, body {
     height: 100%;
 }
 
+/* My Code */
+
+html {
+	font-size: 62.5%;
+}
+
+@primary-color: #2D81A4;
+@secondary-color: #ccc;
+@largefont: 3.25rem;
+@mediumfont: 2.5rem;
+@smallfont: 1.6rem;
+
+body {
+	margin: auto;
+	max-width: 85%;
+	// border: 1px dashed red;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	header {
+		// border: 1px dashed red;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		
+		nav {
+			// border: 1px dashed red;
+			width: 66%;
+			max-width: 66%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin: 15px 0;
+			
+			a {
+				font-size: @largefont;
+				text-decoration: none;
+				color: @primary-color;
+			}
+			a:hover {
+				color: #8CC7E0;
+				transform: scale(1.25);
+			}
+		}
+		img {
+			max-width: 300px;
+			max-height: 300px;
+			border-radius: 50%;
+			margin: 12.5px;
+			
+		}
+		h1 {
+			font-size: 6rem;
+			
+		}
+		p {
+			font-size: @largefont;
+			margin-top: 10px;
+		}
+	}
+	@keyframes fadein {
+		0% {
+			opacity: 0.1;
+		}
+		// 50% {
+		// 	opacity: 0.5;
+		// }
+		100% {
+			opacity: 1;
+		}
+	}
+	main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 7.5rem;
+		p {
+			font-size: @smallfont;
+			margin: 7.5px;
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			width: 45%;
+			text-align: center;
+			justify-content: space-evenly;
+			h2 {
+				font-size: @mediumfont;
+				color: @primary-color;
+			}
+			.info-section {
+				margin: 10px;
+				padding: 10px;
+				ul {
+					margin: 4rem;
+					li {
+						border: 1px solid @secondary-color;
+						padding: 5px 15px;
+						background-color: @primary-color;
+					}
+				}
+				.subtitle {
+					font-size: 2rem;
+				}
+			}
+
+		}
+		#left {
+			background-color: @secondary-color;
+			border-radius: 7.5%;
+			fieldset {
+				border-radius: 7.5%;
+				background-color: @primary-color;
+				
+				label {
+					font-size: @smallfont;
+				}
+				button:hover {
+					background-color: white;
+					border: 2px solid @primary-color;
+				}
+			}
+			
+		}
+		// #right {
+		// 	background-color: 
+		// }
+	}
+	footer {
+		margin: 25px;
+		text-align: center;
+		font-size: @smallfont;
+		a {
+			text-decoration: none;
+			color: @primary-color;
+		}
+		a:hover {
+			color: #8CC7E0;
+			transform: scale(1.25);
+		}
+		p {
+			margin-top: 15px;
+		}
+	}  //footer
+
+	// @media (max-width: 500px) {
+	// 	main {
+	// 		flex-direction: column;
+	// 	}
+	// 	section {
+	// 		width: 90%;
+	// 	}
+	// } 
+} //body
