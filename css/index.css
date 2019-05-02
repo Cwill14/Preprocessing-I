@@ -141,16 +141,15 @@ html {
 body {
   margin: auto;
   max-width: 85%;
-  border: 1px dashed red;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 body header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
 }
 body header nav {
   width: 66%;
@@ -161,12 +160,12 @@ body header nav {
   margin: 15px 0;
 }
 body header nav a {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   text-decoration: none;
-  color: #4682B4;
+  color: #2D81A4;
 }
 body header nav a:hover {
-  color: #aaf;
+  color: #8CC7E0;
   transform: scale(1.25);
 }
 body header img {
@@ -179,7 +178,7 @@ body header h1 {
   font-size: 6rem;
 }
 body header p {
-  font-size: 2.5rem;
+  font-size: 3.25rem;
   margin-top: 10px;
 }
 @keyframes fadein {
@@ -198,28 +197,61 @@ body main {
 }
 body main p {
   font-size: 1.6rem;
+  margin: 7.5px;
 }
 body main section {
   display: flex;
   flex-direction: column;
   width: 45%;
   text-align: center;
+  justify-content: space-evenly;
 }
 body main section h2 {
-  font-size: 3rem;
-  color: #4682B4;
+  font-size: 2.5rem;
+  color: #2D81A4;
 }
 body main section .info-section {
   margin: 10px;
+  padding: 10px;
 }
-body main section .subtitle {
+body main section .info-section ul {
+  margin: 4rem;
+}
+body main section .info-section ul li {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  background-color: #2D81A4;
+}
+body main section .info-section .subtitle {
   font-size: 2rem;
 }
 body main #left {
-  background-color: #ddd;
+  background-color: #ccc;
+  border-radius: 7.5%;
+}
+body main #left fieldset {
+  border-radius: 7.5%;
+  background-color: #2D81A4;
+}
+body main #left fieldset label {
+  font-size: 1.6rem;
+}
+body main #left fieldset button:hover {
+  background-color: white;
+  border: 2px solid #2D81A4;
 }
 body footer {
+  margin: 25px;
   text-align: center;
+  font-size: 1.6rem;
+}
+body footer a {
+  text-decoration: none;
+  color: #2D81A4;
+}
+body footer a:hover {
+  color: #8CC7E0;
+  transform: scale(1.25);
 }
 body footer p {
   margin-top: 15px;
